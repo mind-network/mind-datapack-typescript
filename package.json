@@ -1,0 +1,50 @@
+{
+  "name": "mind-datapack-typescript",
+  "version": "1.0.2",
+  "description": "",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "link-register": "yarn link && yarn link mind-datapack-typescript"
+  },
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "father": "^4.3.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.22.15",
+    "@bnb-chain/greenfield-chain-sdk": "^0.2.2",
+    "@bnb-chain/greenfiled-file-handle": "^0.2.0",
+    "@ethersproject/wallet": "^5.7.0",
+    "@metamask/eth-sig-util": "^4.0.0",
+    "@supercharge/promise-pool": "^2.3.2",
+    "arseeding-arbundles": "0.6.24",
+    "arseeding-js": "^0.0.30",
+    "axios": "^0.21.1",
+    "bignumber.js": "^9.0.2",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.9",
+    "decimal.js": "^10.4.3",
+    "ethers": "^5.7.1",
+    "everpay": "0.5.2",
+    "jszip": "^3.10.1",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.35",
+    "mind-lake-sdk": "^1.0.7",
+    "multiformats": "^9.6.5",
+    "web3": "^4.1.1"
+  }
+}
